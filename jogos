@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Jogos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dab2e6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a0052;
+            color: white;
+            padding: 20px 0;
+        }
+        .games-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .game {
+            background-color: white;
+            border: 2px solid #4a0052;
+            border-radius: 10px;
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .game img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .game h3 {
+            margin: 10px 0;
+            color: #4a0052;
+        }
+        .game button {
+            background-color: #4a0052;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .game button:hover {
+            background-color: #3a0042;
+        }
+        .hakari {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Esses são os jogos</h1>
+    </header>
+    <div class="games-container">
+        <div class="game">
+            <h3>Roleta do amor</h3>
+            <img src="https://i.imgur.com/49n6jVD.png" alt="Caça-níqueis">
+            <button onclick="window.location.href='https://example.com/slot-machine'">Ir para o jogo</button>
+            <img src="https://i.imgur.com/Qd22wGI.png" alt="Hakari" class="hakari">
+        </div>
+        <div class="game">
+            <h3>Mines</h3>
+            <img src="https://i.imgur.com/HQfQda7.png" alt="Bingo">
+            <button onclick="window.location.href='https://example.com/bingo'">Ir para o jogo</button>
+            <img src="https://i.imgur.com/Qd22wGI.png" alt="Hakari" class="hakari">
+        </div>
+        <div class="game">
+            <h3>apostas de lutas</h3>
+            <img src="https://i.ytimg.com/vi/aq77frMKWlw/hqdefault.jpg" alt="Jujutsu Kaisen">
+            <button onclick="window.location.href='https://example.com/jujutsu-kaisen'">Ir para o jogo</button>
+            <img src="https://i.imgur.com/Qd22wGI.png" alt="Hakari" class="hakari">
+        </div>
+    </div>
+</body>
+</html>
